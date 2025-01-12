@@ -1,0 +1,130 @@
+
+:root {
+    --primary-color: #A2574F;
+    --secondary-color: #E68057;
+    --tertiary-color: #BF7587;
+}
+
+/* Apply colors to your app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task-status {
+    display: flex;
+    align-items: center;
+}
+
+.task-status input {
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+.completed {
+    color: var(--secondary-color);
+}
+
+.pending {
+    color: var(--tertiary-color);
+}
+
+.task-actions a {
+    margin-left: 10px;
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.task-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Custom navbar styling */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    background-color: #0056b3;
+    color: white !important;
+}
+
+/* Delete Button Styling */
+.task-actions a {
+    margin-left: 10px;
+    color: #ffffff; /* Make the text white */
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #dc3545; /* Red background */
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.task-actions a:hover {
+    background-color: #c82333; /* Darker red on hover */
+    text-decoration: none;
+    opacity: 1;
+}
+
+.card {
+    margin-bottom: 15px; /* Add some space between cards */
+}
+
+.card-body {
+    padding: 10px;
+}

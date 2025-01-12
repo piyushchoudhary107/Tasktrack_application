@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTrack</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{% static 'tasks/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'tasks/styles.css' %}?v={{ version_number }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR3+a1LZhkta2A59X+5fAXewAlX+1m3t0skLlf2k7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76A4J1kDKXG+e1jjE8fJk6UZfz9hytb6HWz78ddwU74MEeQrSey1eXJoMKhxj9i" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'tasks/styles.css' %}">
+
+
+    
+</head>
+<body>
+    <header class="bg-light text-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 text-md-right">
+                
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{% url 'tasks' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{% url 'create_task' %}">Add Task</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <nav>
+        <a href="{% url 'tasks' %}">Tasks</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </nav>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+:root {
+    --bs-primary: #A2574F;
+    --bs-secondary: #E68057;
+    --bs-danger: #BF7587;
+}
+
+body {
+    background-color: #f0f4f8; /* Replace with your chosen color */
+    color: #495057; /* Optional: Adjust text color for better readability */
+}
+
+h1, h2, .text-primary {
+    color: #A2574F;
+}
+.alert {
+    margin-top: 20px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task-status {
+    display: flex;
+    align-items: center;
+}
+
+.task-status input {
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.completed {
+    color: green;
+}
+
+.pending {
+    color: red;
+}
+
+.task-actions a {
+    margin-left: 10px;
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.task-actions a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #A2574F;
+    border-color: #A2574F;
+}
+
+.btn-primary:hover {
+    background-color: #E68057;
+    border-color: #E68057;
+}
+
+
+
+.container, .card {
+    background-color: white; /* Keep elements like cards and containers white for contrast */
+    border-radius: 10px; /* Optional: Add some styling to cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}

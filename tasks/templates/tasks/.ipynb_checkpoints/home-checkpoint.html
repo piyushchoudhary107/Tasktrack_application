@@ -1,0 +1,44 @@
+{% extends 'tasks/base.html' %}
+
+{% load static %}  
+{% block content %}ss
+<div class="container text-center mt-5">
+    <img src="{% static 'images/tasktrack_logo.png' %}" alt="TaskTrack Logo" class="img-fluid mb-4" style="max-width: 200px;">
+    <h1 class="display-4 text-primary">Welcome to TaskTrack</h1>
+    <p class="lead text-secondary">Manage your tasks with ease and efficiency.</p>
+    <a href="{% url 'tasks' %}" class="btn btn-primary btn-lg">View Tasks</a>
+</div>
+
+
+
+<!-- Welcome Message -->
+<div class="container mt-4">
+    <h1 class="text-center" style="font-size: 2.5rem; color: #343a40;">Welcome to TaskTrack</h1>
+    <p class="text-center" style="font-size: 1.2rem; color: #6c757d;">Manage your tasks easily and efficiently.</p>
+</div>
+
+<!-- Call to Action Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Your Tasks</h5>
+                    <p class="card-text">View and manage your tasks effectively.</p>
+                    <a href="{% url 'tasks' %}" class="btn btn-primary btn-block">View Tasks</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Create a Task</h5>
+                    <p class="card-text">Create new tasks and stay on top of your to-do list.</p>
+                    <a href="{% url 'create_task' %}" class="btn btn-success btn-block">Create Task</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

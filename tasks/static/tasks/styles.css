@@ -1,0 +1,63 @@
+/* Define colors */
+:root {
+    --primary-color: #A2574F;
+    --secondary-color: #E68057;
+    --tertiary-color: #BF7587;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+.task-item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.task-item:hover {
+    background-color: #f1f1f1;
+}
+
+.completed {
+    color: var(--secondary-color);
+}
+
+.pending {
+    color: var(--tertiary-color);
+}
+
