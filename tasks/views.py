@@ -125,7 +125,7 @@ def chatbot(request):
     if not user_query:
         return JsonResponse({'response': 'Please provide a message.'})
 
-    # Add conversational logic
+    
     if 'hello' in user_query or 'hi' in user_query:
         bot_response = 'Hello! How can I assist you today?'
     elif 'create task' in user_query or 'add task' in user_query:
