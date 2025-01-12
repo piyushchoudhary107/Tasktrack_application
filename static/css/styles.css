@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #f0f4f8; /* Replace with your chosen color */
-    color: #495057; /* Optional: Adjust text color for better readability */
+    background-color: #f0f4f8; 
+    color: #495057; 
 }
 
 h1, h2, .text-primary {
@@ -89,7 +89,7 @@ h1, h2, .text-primary {
 
 
 .container, .card {
-    background-color: white; /* Keep elements like cards and containers white for contrast */
-    border-radius: 10px; /* Optional: Add some styling to cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
